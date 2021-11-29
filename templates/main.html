@@ -6,8 +6,28 @@
     <link rel="shortcut icon" href="../assets/robot.png" type="image/png">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../scripts/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
   </head>
-  <body>
+  <body onscroll="animateText(AITextMin)" onload="logoClicked()">
+    <script type="text/javascript">
+    $(document).ready(function(){
+      animate_loop = function animate_loop(){
+              $('#elem').slideDown(1500);
+              $('#elem').slideUp(1500);
+              $( "#animTarget" ).animate({
+                  opacity: 0.07,
+
+                }, 1500,function(){
+                     $( "#animTarget").animate({ opacity: 1}, 1500)
+                       animate_loop();
+              } );
+      }
+
+      animate_loop();
+      });
+    </script>
     <div class="header">
       <div class="heroRect"></div>
       <div class="headerRect"></div>
@@ -25,7 +45,7 @@
         </ul>
       </div>
       <div class="frame">
-        <p class="signin"><a href="login.html" class="signin">Sign in</a></p>
+        <p class="signin"><a href="login.html" class="signin" >Sign in</a></p>
       </div>
     </div>
     <div class="heroArea">
@@ -51,15 +71,17 @@
     </div>
     <div class="AI">
       <div class="AIGroup">
-        <p class="AIText">Apply AI, Deep Learning and Data Sciece to solve</p>
-        <p class="AIMinText">Lorem ipsum is placeholder text
-          commonly used in the graphic, print, and publishing industries
-          for previewing layouts and visual mockups.</p>
-          <div class="AIButton">
+        <p class="AIText" id="elem">Apply AI, Deep Learning and Data Sciece to solve</p>
+        <p class="AIMinText" id="AITextMin" title="Lorem ipsum is placeholder text
+            commonly used in the graphic, print, and publishing industries
+            for previewing layouts and visual mockups.">Lorem ipsum is placeholder text
+            commonly used in the graphic, print, and publishing industries
+            for previewing layouts and visual mockups.</p>
+          <div class="AIButton" id="animTarget">
             <p class="AIButtonText"><a href="#" class="AIButtonText">Learn More</a></p>
           </div>
       </div>
-      <div class="AIImage"></div>
+      <div class="AIImage" id="ImageAI"></div>
     </div>
     <div class="Feature">
       <div class="container">
