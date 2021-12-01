@@ -1,6 +1,5 @@
 * {
   background-color: #020A18;
-  height: 3700px;
 }
 .imageHero {
   position: absolute;
@@ -191,7 +190,7 @@
   bottom: 0;
   background: url(../assets/416.png);
 }
-.container {
+.containerPos {
   position: static;
   align-items: flex-start;
   display: inline-grid;

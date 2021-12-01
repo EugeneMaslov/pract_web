@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Artificial Intelligence</title>
     <link rel="shortcut icon" href="../assets/robot.png" type="image/png">
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/login.css">
     <script src="../scripts/script.js"></script>
@@ -29,198 +32,242 @@
     </script>
   </head>
   <body onscroll="animateText(AITextMin)" onload="logoClicked()">
-    <div class="header">
-      <div class="heroRect"></div>
-      <div class="headerRect"></div>
-      <div class="logo">
-        <img src="../assets/robot.png" class="logoImage">
-        <a class="logoText" id="logoClick" onclick="logoClicked()">Artificial Intelligence</a>
-      </div>
-      <div class="menus">
-        <ul class="list">
-          <li class="listItem"><a href="main.html" class="listItem">Home</a></li>
-          <li class="listItem"><a href="about.html" class="listItem">About</a></li>
-          <li class="listItem"><a href="#" class="listItem">Services</a></li>
-          <li class="listItem"><a href="#" class="listItem">Blog</a></li>
-          <li class="listItem"><a href="contact.html" class="listItem">Contact</a></li>
-        </ul>
-      </div>
-      <div class="frame">
-        <p class="signin"><a href="login.html" class="signin" >Sign in</a></p>
-      </div>
-    </div>
-    <div class="heroArea">
-      <div class="groupHero">
-        <p class="upper">Next generetion platform</p>
-        <p class="artificial">Artificial Intelligence & Syber security</p>
-        <p class="artificialText">Lorem ipsum is placeholder text commonly used
-          in the graphic, print, and publishing industries for previewing
-          layouts and visual mockups.</p>
-          <div class="artificialButtons">
-            <div class="frameHero">
-              <p class="frameHeroText"><a href="#" class="frameHeroText">Get Started</a></p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="heroRect"></div>
+        <div class="col-md-12">
+          <div class="row">
+            <div class="headerRect"></div>
+            <div class="col-md-4 col-sm-6 col-xs-12 offset-xs-3 offset-sm-1">
+              <div class="row">
+                <div class="col-xs-2 col-sm-3">
+                  <div class="imgDiv">
+                    <img src="../assets/robot.png" class="logoImage">
+                  </div>
+                </div>
+                <div class="col-xs-10 col-sm-9">
+                  <div class="logoText">
+                    <a class="logoTextPos" id="logoClick" onclick="logoClicked()">Artificial Intelligence</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="frameHero">
-              <img src="../assets/Polygon.png" alt="" class="artificialImage">
-              <p class="frameHeroText"><a href="#" class="frameHeroText">Watch Video</a></p>
+            <div class="col-md-4 d-none d-md-block">
+              <div class="h-100 row">
+                <div class="col-md-2">
+                  <div class="listItem text-center">
+                    <a href="main.html" class="listItem">Home</a>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="listItem text-center">
+                    <a href="about.html" class="listItem">About</a>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="listItem text-center">
+                    <a href="#" class="listItem">Services</a>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="listItem text-center">
+                    <a href="#" class="listItem">Blog</a>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="listItem text-center">
+                    <a href="contact.html" class="listItem">Contact</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-      </div>
-      <div class="imageHero"></div>
-      <div class="groupFootHero" id="groupFootHeroId">
-      </div>
-    </div>
-    <div class="AI">
-      <div class="AIGroup">
-        <p class="AIText" id="elem">Apply AI, Deep Learning and Data Sciece to solve</p>
-        <p class="AIMinText" id="AITextMin" title="Lorem ipsum is placeholder text
-            commonly used in the graphic, print, and publishing industries
-            for previewing layouts and visual mockups.">Lorem ipsum is placeholder text
-            commonly used in the graphic, print, and publishing industries
-            for previewing layouts and visual mockups.</p>
-          <div class="AIButton" id="animTarget">
-            <p class="AIButtonText"><a href="#" class="AIButtonText">Learn More</a></p>
-          </div>
-      </div>
-      <div class="AIImage" id="ImageAI"></div>
-    </div>
-    <div class="Feature">
-      <div class="container">
-        <div class="containerRect"></div>
-        <div class="containerImage1"></div>
-        <p class="ContainerText">Naxly as the Winners in Global Agency Awards</p>
-        <p class="ContainerMinText">Lorem ipsum is placeholder text
-          commonly used in print, and publishing industries for previewing
-          layouts and visual mockups.</p>
-      </div>
-      <div class="container">
-        <div class="containerRect"></div>
-        <div class="containerImage2"></div>
-        <p class="ContainerText">Expert Prespective Agency Awards</p>
-        <p class="ContainerMinText">Lorem ipsum is placeholder text commonly
-           used in print, and publishing industries for previewing layouts
-           and visual mockups.</p>
-      </div>
-      <div class="container">
-        <div class="containerRect"></div>
-        <div class="containerImage3"></div>
-        <p class="ContainerText">Business Prespective Global Agency Awards</p>
-        <p class="ContainerMinText">Lorem ipsum is placeholder text commonly
-          used in print, and publishing industries for previewing layouts and
-          visual mockups.</p>
-      </div>
-      <div class="container">
-        <div class="containerRect"></div>
-        <div class="containerImage4"></div>
-        <p class="ContainerText">Value for Results in Global Agency Awards</p>
-        <p class="ContainerMinText">Lorem ipsum is placeholder text
-          commonly used in print, and publishing industries for previewing
-          layouts and visual mockups.</p>
-      </div>
-      <div class="containerlast">
-        <div class="containerRect"></div>
-        <div class="containerImage5"></div>
-        <p class="ContainerText">Global Experience in Agency Awards</p>
-        <p class="ContainerMinText">Lorem ipsum is placeholder text
-          commonly used in print, and publishing industries for previewing
-          layouts and visual mockups.</p>
-      </div>
-      <div class="FeatureImage"></div>
-    </div>
-    <div class="AboutThis">
-      <div class="AboutThisText">
-        <p class="AboutThisMainFont">What our clients say
-          about our awesome solutions</p>
-        <p class="AboutThisSecondFont">To take a trivial example, which of us
-          ever undertakes laborious physical exercise, except to obtain some
-          advantage from it who do not know.</p>
-        <p class="AboutThisSecondFont">Lorem ipsum is placeholder text commonly
-           used in the graphic, print, and publishing .</p>
-        <p class="AboutThisSecondFont">Lorem ipsum is placeholder previewing
-          layouts and visual mockups.</p>
-        <p class="AboutThisSecondFont">Lorem ipsum is placeholder text commonly
-          used in the graphic, print, and publishing industries for previewing
-           layouts and visual mockups.</p>
-      </div>
-      <div class="AboutThisImage"></div>
-    </div>
-    <div class="Footer">
-      <div class="FooterRect"></div>
-      <div class="Post">
-        <img src="../assets/robot.png" class="logoImage">
-        <p class="postArt">Artificial Intelligence</p>
-      </div>
-      <div class="postLoremText">
-        <p class="postLorem">Lorem ipsum is placeholder text commonly used in the
-           graphic, print, and layouts and visual mockups.</p>
-      </div>
-      <div class="company">
-        <div class="mail"></div>
-        <p class="companyName">Company@gmail.com.com</p>
-      </div>
-      <div class="phone">
-        <div class="phoneImage"></div>
-        <p class="phoneName">Phone: (064) 332-1233</p>
-      </div>
-      <div class="geolocation">
-        <div class="geoImage"></div>
-        <p class="geoText">450 Wall Street, USA, New York</p>
-      </div>
-      <div class="info1">
-        <p class="infoMain">Information</p>
-        <ul class="FooterList">
-          <li class="FooterListElement">New Collection</li>
-          <li class="FooterListElement">About Store</li>
-          <li class="FooterListElement">Contact Us</li>
-          <li class="FooterListElement">Latest News</li>
-          <li class="FooterListElement">Our Sitemap</li>
-          <li class="FooterListElement">Orders History</li>
-        </ul>
-      </div>
-      <div class="info2">
-        <p class="infoMain">Footer  Menu</p>
-        <ul class="FooterList">
-          <li class="FooterListElement">Instagram profile</li>
-          <li class="FooterListElement">New Collection</li>
-          <li class="FooterListElement">Contact Us</li>
-          <li class="FooterListElement">Latest News</li>
-          <li class="FooterListElement">Terms & Conditions</li>
-          <li class="FooterListElement">Purchase Theme</li>
-        </ul>
-      </div>
-      <div class="info3">
-        <p class="infoMain">Useful Links</p>
-        <ul class="FooterList">
-          <li class="FooterListElement">Instagram profile</li>
-          <li class="FooterListElement">New Collection</li>
-          <li class="FooterListElement">Contact Us</li>
-          <li class="FooterListElement">Latest News</li>
-          <li class="FooterListElement">Terms & Conditions</li>
-          <li class="FooterListElement">Purchase Theme</li>
-        </ul>
-      </div>
-      <div class="info4">
-        <p class="infoMain">About the store</p>
-        <p class="postLorem">Lorem ipsum is placeholder text commonly used in the
-           graphic, print, and layouts and visual mockups.</p>
-        <p class="companyNameFooter">www.company.com</p>
-        <div class="imagesFooter">
-          <img src="../assets/facebook.png" alt="" class="footerImage">
-          <img src="../assets/inst.png" alt="" class="footerImage">
-          <img src="../assets/twit.png" alt="" class="footerImage">
-          <img src="../assets/ln.png" alt="" class="footerImage">
-          <img src="../assets/youtube.png" alt="" class="footerImage">
-        </div>
-        <div class="dropdown">
-          <div class="dropbtn">
-            English
-          </div>
-          <div class="dropdown-content">
-            <a href="#">English</a>
-            <a href="#">Russian</a>
+            <div class="col-md-2 d-none d-md-block">
+              <div class="frame text-center">
+                <a href="login.html" class="signin" >Sign in</a>
+              </div>
+            </div>
+            <div class="col-sm-3 d-none d-sm-block d-md-none">
+              <div class="listItem text-center">
+                <a href="#" class="listItem">Something else</a>
+              </div>
+            </div>
           </div>
         </div>
-        <img src="../assets/arrow.png" alt="" class="dropdown-arrow">
+
+        <div class="heroArea">
+          <div class="groupHero">
+            <p class="upper">Next generetion platform</p>
+            <p class="artificial">Artificial Intelligence & Syber security</p>
+            <p class="artificialText">Lorem ipsum is placeholder text commonly used
+              in the graphic, print, and publishing industries for previewing
+              layouts and visual mockups.</p>
+              <div class="artificialButtons">
+                <div class="frameHero">
+                  <p class="frameHeroText"><a href="#" class="frameHeroText">Get Started</a></p>
+                </div>
+                <div class="frameHero">
+                  <img src="../assets/Polygon.png" alt="" class="artificialImage">
+                  <p class="frameHeroText"><a href="#" class="frameHeroText">Watch Video</a></p>
+                </div>
+              </div>
+          </div>
+          <div class="imageHero"></div>
+          <div class="groupFootHero" id="groupFootHeroId">
+          </div>
+        </div>
+        <div class="AI">
+          <div class="AIGroup">
+            <p class="AIText" id="elem">Apply AI, Deep Learning and Data Sciece to solve</p>
+            <p class="AIMinText" id="AITextMin" title="Lorem ipsum is placeholder text
+                commonly used in the graphic, print, and publishing industries
+                for previewing layouts and visual mockups.">Lorem ipsum is placeholder text
+                commonly used in the graphic, print, and publishing industries
+                for previewing layouts and visual mockups.</p>
+              <div class="AIButton" id="animTarget">
+                <p class="AIButtonText"><a href="#" class="AIButtonText">Learn More</a></p>
+              </div>
+          </div>
+          <div class="AIImage" id="ImageAI"></div>
+        </div>
+        <div class="Feature">
+          <div class="containerPos">
+            <div class="containerRect"></div>
+            <div class="containerImage1"></div>
+            <p class="ContainerText">Naxly as the Winners in Global Agency Awards</p>
+            <p class="ContainerMinText">Lorem ipsum is placeholder text
+              commonly used in print, and publishing industries for previewing
+              layouts and visual mockups.</p>
+          </div>
+          <div class="containerPos">
+            <div class="containerRect"></div>
+            <div class="containerImage2"></div>
+            <p class="ContainerText">Expert Prespective Agency Awards</p>
+            <p class="ContainerMinText">Lorem ipsum is placeholder text commonly
+               used in print, and publishing industries for previewing layouts
+               and visual mockups.</p>
+          </div>
+          <div class="containerPos">
+            <div class="containerRect"></div>
+            <div class="containerImage3"></div>
+            <p class="ContainerText">Business Prespective Global Agency Awards</p>
+            <p class="ContainerMinText">Lorem ipsum is placeholder text commonly
+              used in print, and publishing industries for previewing layouts and
+              visual mockups.</p>
+          </div>
+          <div class="containerPos">
+            <div class="containerRect"></div>
+            <div class="containerImage4"></div>
+            <p class="ContainerText">Value for Results in Global Agency Awards</p>
+            <p class="ContainerMinText">Lorem ipsum is placeholder text
+              commonly used in print, and publishing industries for previewing
+              layouts and visual mockups.</p>
+          </div>
+          <div class="containerlast">
+            <div class="containerRect"></div>
+            <div class="containerImage5"></div>
+            <p class="ContainerText">Global Experience in Agency Awards</p>
+            <p class="ContainerMinText">Lorem ipsum is placeholder text
+              commonly used in print, and publishing industries for previewing
+              layouts and visual mockups.</p>
+          </div>
+          <div class="FeatureImage"></div>
+        </div>
+        <div class="AboutThis">
+          <div class="AboutThisText">
+            <p class="AboutThisMainFont">What our clients say
+              about our awesome solutions</p>
+            <p class="AboutThisSecondFont">To take a trivial example, which of us
+              ever undertakes laborious physical exercise, except to obtain some
+              advantage from it who do not know.</p>
+            <p class="AboutThisSecondFont">Lorem ipsum is placeholder text commonly
+               used in the graphic, print, and publishing .</p>
+            <p class="AboutThisSecondFont">Lorem ipsum is placeholder previewing
+              layouts and visual mockups.</p>
+            <p class="AboutThisSecondFont">Lorem ipsum is placeholder text commonly
+              used in the graphic, print, and publishing industries for previewing
+               layouts and visual mockups.</p>
+          </div>
+          <div class="AboutThisImage"></div>
+        </div>
+        <div class="Footer">
+          <div class="FooterRect"></div>
+          <div class="Post">
+            <img src="../assets/robot.png" class="logoImage">
+            <p class="postArt">Artificial Intelligence</p>
+          </div>
+          <div class="postLoremText">
+            <p class="postLorem">Lorem ipsum is placeholder text commonly used in the
+               graphic, print, and layouts and visual mockups.</p>
+          </div>
+          <div class="company">
+            <div class="mail"></div>
+            <p class="companyName">Company@gmail.com.com</p>
+          </div>
+          <div class="phone">
+            <div class="phoneImage"></div>
+            <p class="phoneName">Phone: (064) 332-1233</p>
+          </div>
+          <div class="geolocation">
+            <div class="geoImage"></div>
+            <p class="geoText">450 Wall Street, USA, New York</p>
+          </div>
+          <div class="info1">
+            <p class="infoMain">Information</p>
+            <ul class="FooterList">
+              <li class="FooterListElement">New Collection</li>
+              <li class="FooterListElement">About Store</li>
+              <li class="FooterListElement">Contact Us</li>
+              <li class="FooterListElement">Latest News</li>
+              <li class="FooterListElement">Our Sitemap</li>
+              <li class="FooterListElement">Orders History</li>
+            </ul>
+          </div>
+          <div class="info2">
+            <p class="infoMain">Footer  Menu</p>
+            <ul class="FooterList">
+              <li class="FooterListElement">Instagram profile</li>
+              <li class="FooterListElement">New Collection</li>
+              <li class="FooterListElement">Contact Us</li>
+              <li class="FooterListElement">Latest News</li>
+              <li class="FooterListElement">Terms & Conditions</li>
+              <li class="FooterListElement">Purchase Theme</li>
+            </ul>
+          </div>
+          <div class="info3">
+            <p class="infoMain">Useful Links</p>
+            <ul class="FooterList">
+              <li class="FooterListElement">Instagram profile</li>
+              <li class="FooterListElement">New Collection</li>
+              <li class="FooterListElement">Contact Us</li>
+              <li class="FooterListElement">Latest News</li>
+              <li class="FooterListElement">Terms & Conditions</li>
+              <li class="FooterListElement">Purchase Theme</li>
+            </ul>
+          </div>
+          <div class="info4">
+            <p class="infoMain">About the store</p>
+            <p class="postLorem">Lorem ipsum is placeholder text commonly used in the
+               graphic, print, and layouts and visual mockups.</p>
+            <p class="companyNameFooter">www.company.com</p>
+            <div class="imagesFooter">
+              <img src="../assets/facebook.png" alt="" class="footerImage">
+              <img src="../assets/inst.png" alt="" class="footerImage">
+              <img src="../assets/twit.png" alt="" class="footerImage">
+              <img src="../assets/ln.png" alt="" class="footerImage">
+              <img src="../assets/youtube.png" alt="" class="footerImage">
+            </div>
+            <div class="dropdown">
+              <div class="dropbtn">
+                English
+              </div>
+              <div class="dropdown-content">
+                <a href="#">English</a>
+                <a href="#">Russian</a>
+              </div>
+            </div>
+            <img src="../assets/arrow.png" alt="" class="dropdown-arrow">
+          </div>
+        </div>
       </div>
     </div>
   </body>

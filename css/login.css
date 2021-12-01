@@ -1,18 +1,18 @@
+a:not([href]):not([tabindex]) {
+  color: #3A68B8;
+}
+a:not([href]):not([tabindex]):hover {
+  color: #2E518F;
+  cursor: pointer;
+}
 .login {
   background-color: #020A18;
   height: 1000px;
 }
-.header {
-  position: static;
-  width: 100%;
-  height: 100px;
-  left: 0px;
-  top: 0px;
-}
 .headerRect {
   position: absolute;
   width: 100%;
-  height: 100px;
+  height: 100%;
   left: -1px;
   top: 0px;
 
@@ -38,47 +38,37 @@
   opacity: 0.1;
   border-radius: 10px;
 }
-.logo {
-  position: absolute;
-  background: none;
-  width: 20%;
-  height: 57px;
-  left: 10%;
-  top: 21px;
+.imgDiv {
+  height: 100%;
+  position: static;
 }
 .logoImage {
   position: static;
+  top: 50%;
   height: auto;
   background: none;
 }
 .logoText {
-  display: inline;
+  height: 100%;
+}
+.logoTextPos {
+  color: #3A68B8;
   background: none;
-  height: auto;
-  padding: 20px 15px 0;
-  position: absolute;
   font-family: Open Sans, serif;
   font-style: normal;
   font-weight: 600;
+  line-height: 10px;
   font-size: 22.5455px;
-  line-height: 31px;
-  transition: 0.3s linear;
   text-decoration: none;
-
-  color: #3A68B8;
+  transition: 0.3s linear;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  height: auto;
 }
-.logoText:hover, :focus {
+.logoTextPos:hover, :focus {
   color: #2E518F;
   cursor: pointer;
-}
-.menus {
-  display: inline-block;
-  background: none;
-  position: absolute;
-  width: 411px;
-  height: auto;
-  left: 37.5%;
-  top: 39px;
 }
 .menu {
   height: auto;
@@ -98,27 +88,18 @@
   color: #FFFFFF;
 }
 .list {
-  background: none;
-  margin: 0;
-  padding: 8px;
-  height: inherit;
-  display: flex;
-  list-style: none;
-  list-style-type: none;
-  white-space: nowrap;
-  width: 15%;
+  height: 100%;
+  align-items: center;
 }
 .listItem {
-  display: inline-block;
   background: none;
-  padding-left: 0;
-  padding: 0 15px 0;
+  position: relative;
+  top: 50%;
   font-family: Open Sans, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 22px;
-  height: inherit;
+  line-height: 0px;
   text-decoration: none;
   transition: 0.3s linear;
 
@@ -129,15 +110,12 @@
   cursor: pointer;
 }
 .frame {
-  position: absolute;
-  width: 5%;
-  height: auto;
-  left: 80%;
-  top: 31px;
-
+  position: relative;
+  top: 20%;
+  width: 50%;
+  height: 70%;
   background: #3A68B8;
   border-radius: 5px;
-  flex-grow: 0;
   transition: 0.3s linear;
 }
 .frame:hover, :focus {
@@ -145,17 +123,15 @@
   cursor: pointer;
 }
 .signin {
-  flex-grow: 0;
-  left: 30px;
-  top: 15px;
-  height: inherit;
-  text-align: center;
-  background-color: inherit;
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 15%;
+  background-color: none;
   font-family: Open Sans, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 22px;
   text-decoration: none;
 
   color: #FFFFFF;
@@ -207,8 +183,6 @@
   padding: 15px 30px;
 
   position: absolute;
-  width: 150px;
-  height: 25px;
   top: 285px;
 
   background: #3A68B8;
