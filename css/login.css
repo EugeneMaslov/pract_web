@@ -30,9 +30,8 @@ a:not([href]):not([tabindex]):hover {
 .heroRect {
   position: absolute;
   width: 100%;
-  height: 1030px;
+  height: 100%;
   left: -1px;
-  top: 2px;
 
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) -41.9%, rgba(255, 255, 255, 0.4) 260.24%);
   opacity: 0.1;
@@ -45,7 +44,7 @@ a:not([href]):not([tabindex]):hover {
 .logoImage {
   position: static;
   top: 50%;
-  height: auto;
+  height: 50px;
   background: none;
 }
 .logoText {
@@ -177,13 +176,11 @@ a:not([href]):not([tabindex]):hover {
   color: #FFFFFF;
 }
 .AIButton {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 15px 30px;
+  width: auto;
+  max-width: 200px;
 
-  position: absolute;
-  top: 285px;
+  position: relative;
 
   background: #3A68B8;
   border-radius: 5px;
